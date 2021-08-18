@@ -1,0 +1,126 @@
+img{
+  width: 150px;
+}
+
+header{
+  padding: 10px 0px;
+  background-color: white;
+}
+
+.contenedorGeneral{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 53px);
+  align-content: center;
+}
+.color{
+  color: #c9c9c9;
+}
+form{
+  background-color: white;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+form .bienvenidoBlock{
+  overflow: hidden;
+  padding-top: 0px;
+  margin-top: -1px;
+  border-top: 4px solid var(--principal);
+}
+
+form .bienvenidoBlock h1{
+  position: relative;
+  color: #000047;
+  font-size: 27px;
+  font-weight: 600;
+  padding-top: 34px;
+  margin: 0px;
+  z-index: 100;
+}
+form .bienvenidoBlock h2{
+  position: relative;
+  color: #033DC0;
+  font-size: 27px;
+  font-weight: 600;
+  margin: -2px 0px 0px 0px;
+  z-index: 100;
+}
+form .bienvenidoBlock span{
+  position: relative;
+  display: block;
+  color: #000047;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 13px 0px;
+  margin: 0px;
+  z-index: 100;
+}
+form .errorSpan {
+  color: #F32F35;
+  font-size: 12px;
+  font-weight: 500;
+  transition: 300ms all;
+  margin-bottom: 1px;
+  display: block;
+}
+form .contenedorInput{
+  padding: 0px 40px;
+}
+form input{
+  width: 100%;
+  outline: none;
+  border: 1px solid #000047;
+  padding: 6px 15px;
+  border-radius: 8px;
+}
+form .btn-submit{
+  border-radius: 20px;
+  border-color: var(--principal);
+  color: var(--principal);
+  padding: 4px 30px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: none;
+}
+form .btn-submit:hover{
+  border-color: var(--principalOscuro);
+  color: var(--principalOscuro);
+}
+form .btn-submit:disabled{
+  border-color: var(--secundario);
+  color: var(--secundario);
+  cursor: default;
+}
+@media (max-width: 575.98px) {
+  .contenedorGeneral{
+      min-height: calc(100vh - 63px);
+  }
+  form .bienvenidoBlock h1{
+      font-size: 24px;
+  }
+  form .bienvenidoBlock h2{
+      font-size: 24px;
+  }
+  form .bienvenidoBlock span{
+      font-size: 20px;
+      line-height: normal;
+  }
+  form .contenedorInput{
+      padding: 0px 15px;
+  }
+
+}
+@media (max-width: 767.98px) {
+  .contenedorGeneral{
+    min-height: calc(100vh - 42px);
+  }
+  form .bienvenidoBlock img{
+    height: auto;
+    width: 210px;
+  }
+}

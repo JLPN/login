@@ -1,0 +1,25 @@
+<div style="background-image: url(../../../assets/img/barcoPesquero.jfif);"
+class="row mx-0 d-flex justify-content-center contenedorGeneral">
+  <form [formGroup]="forma" (submit)="onSubmitFormLogin()" class="row mx-0 col-12 col-md-10 col-lg-5"
+  autocomplete="off" novalidate>
+      <div class="col-12 text-center bienvenidoBlock">
+          <h1>Bienvenid@ a </h1>
+          <h2><img class="imagen" src="../../../assets/img/logo-sernapesca.png" alt="Sernapesca"></h2>
+          <span>Inicia sesión con tu mail</span>
+      </div>
+
+      <div class="col-12 contenedorInput">
+          <span *ngIf="correoIncorrecto" class="errorSpan">Ingresa un correo válido</span>
+          <input type="email" placeholder="Correo electrónico" formControlName="idUsuario"
+          autofocus required>
+      </div>
+      <div class="col-12 pt-3 contenedorInput">
+          <span *ngIf="passIncorrecto" class="errorSpan">Ingresa una contraseña válida</span>
+          <input type="password" placeholder="Contraseña" formControlName="clave" autofocus required>
+      </div>
+
+      <div class="col-12 d-flex justify-content-center py-4">
+            <button [disabled]="forma.invalid" type="submit" class="btn btn-submit">INGRESAR</button>
+      </div>
+  </form>
+</div>
